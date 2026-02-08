@@ -1,0 +1,11 @@
+[package]
+name = "hft_orderbook"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] } # El motor asíncrono
+serde = { version = "1", features = ["derive"] } # Serialización eficiente
+serde_json = "1" # Para manejar JSON
+chrono = "0.4" # Manejo de tiempo preciso
+rust_decimal = "1.33" # Matemáticas financieras exactas (evita errores de float)
